@@ -15,7 +15,7 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh 'pip install scikit-learn joblib pandas numpy fastapi uvicorn'
+                sh 'pip install scikit-learn joblib pandas numpy fastapi uvicorn --break-system-packages'
             }
         }
 
